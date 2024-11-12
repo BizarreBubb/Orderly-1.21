@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "orderly",
+	"version": "${version}",
+	"name": "Orderly",
+	"description": "Adds mythril ore, new armor, and weapons from the Orderly and Chaotic Factions.",
+	"authors": [
+		"Bizzy"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/orderly/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bizzy.orderly.Orderly"
+		],
+		"fabric-datagen": [
+			"net.bizzy.orderly.OrderlyDataGenerator"
+		],
+		"client": [
+			"net.bizzy.orderly.OrderlyClient"
+		]
+	},
+	"mixins": [
+		"orderly.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
